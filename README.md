@@ -92,6 +92,7 @@ References
 TODO
 -----
  * Add to rdoc.info
+ * CI at travis
  * Multi-ruby testing: 
    * http://rails-bestpractices.com/blog/posts/11-test-your-rubygem-under-different-rubies
    * https://github.com/tomas-stefano/infinity_test
@@ -99,3 +100,5 @@ TODO
 
 [gys_showoff]: http://grease-your-suite.heroku.com/  "Grease Your Suites"
 
+____
+Copyright (c) 2011 Matthew Scilipoti, released under the MIT license
