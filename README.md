@@ -10,18 +10,22 @@ Inspired by Nick Gauthier's ["Grease-Your-Suite" presentation(s)][gys_showoff].
 
 Faster tests? Good.
 
+Install
+--------
+This will be released to rubygems.org once we have a little more
+functionality.   
+**NOTE:** in order to use the bash scripts, you must use the `--no-wrapper`
+argument.
+    gem install pkg/gyst-0.0.1.gem --no-wrappers
 
 Scripts
 --------
 Various helper scripts.
 
     grease_your_suite.sh # configures REE (different for linux/osx?
-
     rakee # (TODO) runs rake tasks w/ree configured for tests
-
     raket # (TODO) hydra helper, runs rake tasks w/ree configured for tests & RAILS_ENV=test
-
-### `grease_your_suite.sh (gys)`
+### grease_your_suite.sh (gys)
 ---
 This script configures Ruby Enterprise Edition
 (REE) for testing,
@@ -30,9 +34,11 @@ Usually used as a helper script for rake tasks.  Also useful for a
 group of specs.
 
 We recommend you use an alias:
+
     alias gys=grease_your_suite.sh
 
 Usage:
+
     gys rspec spec
     gys rspec -cfs spec/a_sub_dir
 
@@ -67,6 +73,12 @@ Tested On
 --------------
 Ruby 1.9.2 (p180)
 
+
+Contribute
+-----------
+Add ideas and bugs to our [issues on github](https://github.com/mattscilipoti/gyst/issues).   
+Fork, use a feature branch, create a pull request from the feature branch.
+
 References
 -----------
  * https://github.com/ngauthier/Grease-Your-Suite
@@ -79,10 +91,11 @@ References
 
 TODO
 -----
-Add to rdoc.info
-Multi-ruby testing: 
-  http://rails-bestpractices.com/blog/posts/11-test-your-rubygem-under-different-rubies
-  https://github.com/tomas-stefano/infinity_test
+ * Add to rdoc.info
+ * Multi-ruby testing: 
+   * http://rails-bestpractices.com/blog/posts/11-test-your-rubygem-under-different-rubies
+   * https://github.com/tomas-stefano/infinity_test
 
 
 [gys_showoff]: http://grease-your-suite.heroku.com/  "Grease Your Suites"
+
