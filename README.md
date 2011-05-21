@@ -22,31 +22,11 @@ argument.
 
 Scripts
 --------
----
 Various helper scripts.
 
-    grease_your_suite.sh # configures REE (different for linux/osx?
     rakee # runs rake tasks with REE configured for tests
     raket # (TODO) hydra helper, runs rake tasks with RAILS_ENV=tes and REE configured for tests
-
-
-### grease_your_suite.sh (gys)
----
-This script configures Ruby Enterprise Edition
-(REE) for testing,
-as [suggested here][gys_showoff].
-Usually used as a helper script for rake tasks.  Also useful for a
-group of specs.
-
-We recommend you use an alias:
-
-    alias gys=grease_your_suite.sh
-
-Usage:
-
-    gys cucumber
-    gys rspec spec
-    gys rspec -cfs spec/a_sub_dir
+    grease_your_suite.sh # configures REE (different for linux/osx?
 
 
 ### rakee
@@ -59,8 +39,26 @@ Usage:
     rakee test:units
     rakee features
 
-***API***
+
+### grease_your_suite.sh (gys)
 ---
+This script configures Ruby Enterprise Edition (REE) for testing,
+as [suggested here][gys_showoff].   
+Usually used as a helper script for rake tasks.
+Also useful for a group of specs.
+
+We recommend you use an alias:
+
+    alias gys=grease_your_suite.sh
+
+Usage:
+
+    gys cucumber
+    gys rspec spec
+    gys rspec -cfs spec/a_sub_dir
+
+
+***API***
 ---
 
 ### Libraries
