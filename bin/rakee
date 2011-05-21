@@ -1,0 +1,4 @@
+#!/bin/sh
+
+grease_your_suite.sh rake $@
+

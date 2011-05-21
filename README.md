@@ -23,8 +23,9 @@ Scripts
 Various helper scripts.
 
     grease_your_suite.sh # configures REE (different for linux/osx?
-    rakee # (TODO) runs rake tasks w/ree configured for tests
-    raket # (TODO) hydra helper, runs rake tasks w/ree configured for tests & RAILS_ENV=test
+    rakee # runs rake tasks with REE configured for tests
+    raket # (TODO) hydra helper, runs rake tasks with RAILS_ENV=tes and REE configured for tests
+
 ### grease_your_suite.sh (gys)
 ---
 This script configures Ruby Enterprise Edition
@@ -39,12 +40,22 @@ We recommend you use an alias:
 
 Usage:
 
+    gys cucumber
     gys rspec spec
     gys rspec -cfs spec/a_sub_dir
 
+### rakee
+---
+rakee configures REE for testing then runs the task.  It simply executes grease_your_suite.sh before running the rake task.
 
-API
-----
+Usage:
+    rakee # runs all tests after configuring REE
+    rakee test:units
+    rakee cucumber
+
+
+*** API ***
+---
 
 ### Libraries
 ---
@@ -77,7 +88,9 @@ Ruby 1.9.2 (p180)
 Contribute
 -----------
 Add ideas and bugs to our [issues on github](https://github.com/mattscilipoti/gyst/issues).   
-Fork, use a feature branch, create a pull request from the feature branch.
+Fork, use a feature branch, create a pull request from the feature branch.   
+Run all tests with `rakee`
+
 
 References
 -----------
