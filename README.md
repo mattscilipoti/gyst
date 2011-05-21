@@ -18,13 +18,17 @@ functionality.
 argument.
     gem install pkg/gyst-0.0.1.gem --no-wrappers
 
+
+
 Scripts
 --------
+---
 Various helper scripts.
 
     grease_your_suite.sh # configures REE (different for linux/osx?
     rakee # runs rake tasks with REE configured for tests
     raket # (TODO) hydra helper, runs rake tasks with RAILS_ENV=tes and REE configured for tests
+
 
 ### grease_your_suite.sh (gys)
 ---
@@ -44,18 +48,19 @@ Usage:
     gys rspec spec
     gys rspec -cfs spec/a_sub_dir
 
+
 ### rakee
 ---
-rakee configures REE for testing then runs the task.  It simply executes grease_your_suite.sh before running the rake task.
+`rakee` configures REE for testing, then runs the task(s).  It simply executes grease_your_suite.sh before running the rake task.
 
 Usage:
 
     rakee # runs all tests after configuring REE
     rakee test:units
-    rakee cucumber
-
+    rakee features
 
 ***API***
+---
 ---
 
 ### Libraries
@@ -77,8 +82,7 @@ Sets default_strategy to :build
 
     require 'gyst/factory_girl' # (TODO) all factory_girl enhancements (rspec, test_unit, etc)
     require 'gyst/factory_girl/rspec' # (TODO) just patch for rspec
-    require 'gyst/factory_girl/test_unit' # (TODO) just patch for
-Test::Unit
+    require 'gyst/factory_girl/test_unit' # (TODO) just patch for Test::Unit
 
 
 Tested On
@@ -88,9 +92,10 @@ Ruby 1.9.2 (p180)
 
 Contribute
 -----------
+Contributions and discussions are welcome.
 Add ideas and bugs to our [issues on github](https://github.com/mattscilipoti/gyst/issues).   
 Fork, use a feature branch, create a pull request from the feature branch.   
-Run all tests with `rakee`
+`bundle install`.  Run all tests with `rakee`
 
 
 References
