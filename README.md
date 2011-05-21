@@ -25,7 +25,7 @@ Scripts
 Various helper scripts.
 
     rakee # runs rake tasks with REE configured for tests
-    raket # (TODO) hydra helper, runs rake tasks with RAILS_ENV=tes and REE configured for tests
+    raket # hydra helper, runs rake tasks with RAILS_ENV=tes and REE configured for tests
     grease_your_suite.sh # configures REE (different for linux/osx?
 
 
@@ -38,6 +38,16 @@ Usage:
     rakee # runs all tests after configuring REE
     rakee test:units
     rakee features
+
+
+### raket
+---
+`raket` is a helper for the [hydra gem](https://github.com/ngauthier/hydra). Hydra requires that `RAILS_ENV=test`.  `raket` sets RAILS_ENV and configures REE for testing, then runs the task(s).
+
+Usage:
+
+    raket hydra
+    raket hydra:specs
 
 
 ### grease_your_suite.sh (gys)
@@ -95,6 +105,10 @@ Add ideas and bugs to our [issues on github](https://github.com/mattscilipoti/gy
 Fork, use a feature branch, create a pull request from the feature branch.   
 `bundle install`.  Run all tests with `rakee`
 
+*NOTE*: when adding a new shell script
+ * add to git index
+ * `rake build`
+ * gem install pkg/gyst-0.0.?.gem --no-wrappers
 
 References
 -----------

@@ -1,0 +1,5 @@
+#!/bin/sh
+## Hydra needs test env.
+echo "Loading test environment..."
+RAILS_ENV=test rakee $*
+

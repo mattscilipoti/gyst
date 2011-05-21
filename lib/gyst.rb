@@ -1,3 +1,3 @@
-module Gys
+module Gyst
   # Your code goes here...
 end
