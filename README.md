@@ -49,12 +49,13 @@ Usage:
 rakee configures REE for testing then runs the task.  It simply executes grease_your_suite.sh before running the rake task.
 
 Usage:
+
     rakee # runs all tests after configuring REE
     rakee test:units
     rakee cucumber
 
 
-*** API ***
+***API***
 ---
 
 ### Libraries
