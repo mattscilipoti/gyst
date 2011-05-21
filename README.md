@@ -101,11 +101,12 @@ Ruby 1.9.2 (p180)
 Contribute
 -----------
 Contributions and discussions are welcome.
-Add ideas and bugs to our [issues on github](https://github.com/mattscilipoti/gyst/issues).   
+Feel free to add sugggestions and bugs to our [issues on github](https://github.com/mattscilipoti/gyst/issues).   
 Fork, use a feature branch, create a pull request from the feature branch.   
-`bundle install`.  Run all tests with `rakee`
+`bundle install`.  Run all tests with `rakee`   
 
 *NOTE*: when adding a new shell script
+
  * add to git index
  * `rake build`
  * gem install pkg/gyst-0.0.?.gem --no-wrappers
