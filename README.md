@@ -88,7 +88,7 @@ Yells if you try to access the db
 #### Factory Girl
 Sets default_strategy to :build
 
-    require 'gyst/factory_girl' # (TODO) all factory_girl enhancements (rspec, test_unit, etc)
+    require 'gyst/factory_girl' # all factory_girl enhancements (rspec, test_unit, etc)
     require 'gyst/factory_girl/rspec' # (TODO) just patch for rspec
     require 'gyst/factory_girl/test_unit' # (TODO) just patch for Test::Unit
 
@@ -102,8 +102,15 @@ Contribute
 -----------
 Contributions and discussions are welcome.
 Feel free to add sugggestions and bugs to our [issues on github](https://github.com/mattscilipoti/gyst/issues).   
-Fork, use a feature branch, create a pull request from the feature branch.   
-`bundle install`.  Run all tests with `rakee`   
+* Fork the project.
+* `bundle install`.  Run all tests with `rakee`
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so I don't break it in a
+  future version unintentionally.  Note: the existing tests may fail
+  with pre-1.9 versions of ruby; upgrade to get clean runs.
+* Commit, do not mess with rakefile, version, or history.
+  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+* Send me a pull request. Bonus points for topic branches.
 
 *NOTE*: when adding a new shell script
 

@@ -2,11 +2,11 @@ require 'bundler'
 Bundler::GemHelper.install_tasks
 
 
-# require 'rake/testtask'
+require 'rake/testtask'
 
-# Rake::TestTask.new do |t|
-#   t.pattern = "spec/*_spec.rb"
-# end
+Rake::TestTask.new do |t|
+  t.pattern = "spec/*_spec.rb"
+end
 
 
 require 'cucumber'
@@ -16,7 +16,7 @@ Cucumber::Rake::Task.new(:features) do |t|
   t.cucumber_opts = "features --format pretty"
 end
 
-task :default => [:features]
+task :default => [:test, :features]
 
 
 # rake tasks for testing

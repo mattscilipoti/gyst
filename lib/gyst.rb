@@ -1,3 +1,1 @@
-module Gyst
-  # Your code goes here...
-end
+# require 'gyst/factory_girl'
