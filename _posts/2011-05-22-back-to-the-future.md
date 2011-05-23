@@ -14,7 +14,7 @@ I went with [gh_pages](http://pages.github.com/) and [jekyll](https://github.com
 [Yak One](http://sethgodin.typepad.com/seths_blog/2005/03/dont_shave_that.html): the gh_pages branch
 ----------------------------
 
-Github has chosen to create these pages in a special branch: gh_pages.  Thanks to github for making this a little easier.  That button was nice.  I switched to the new branch (`git checkout -t origin/gh_pages`) and `git status` shows me that all the files that were git-ignored in the code branches (master) are not accounted for here.  Copying .gitignore solved that issue.  That means Gemfile.lock is ignored by both and, therefore, shared by both.  I forsee this getting out of synch, creating some minor impediments to adding blog entries. 
+Github has chosen to create these pages in a special branch: gh_pages.  Thanks to github for making this a little easier.  That button was nice.  I switched to the new branch (`git checkout -t origin/gh_pages`) and `git status` shows me that all the files that were git-ignored in the code branches (master) are not accounted for here.  Copying .gitignore solved that issue.  That means Gemfile.lock is ignored by both and, therefore, shared by both.  This will get out of synch, a minor drawback when adding blog entries, but I don't see a better way right now.
 
 Yak Two: redcarpet
 ------------------
