@@ -30,12 +30,12 @@ Setup for Jekyll
 ----------------
 
 Converting a single index.html into a jekyll project was pretty simple.
-I reviewed [install](https://github.com/mojombo/jekyll/wiki/Install) and [usage](https://github.com/mojombo/jekyll/wiki/usage) on the wiki, then created _posts/ and created _config.yml:
+I reviewed [install](https://github.com/mojombo/jekyll/wiki/Install) and [usage](https://github.com/mojombo/jekyll/wiki/usage) on the wiki, then created `_posts/` and created `_config.yml`:
     lsi: false
     markdown: rdiscount
     pygments: true
     safe: true
-The "markdown" entry was on the [install page](https://github.com/mojombo/jekyll/wiki/Install).
+The "markdown:" entry is from the [install page](https://github.com/mojombo/jekyll/wiki/Install).   
 Runnning `jekyll && open _site/index.html` showed... the same page as
 before, but now it's part of my jekyll'd site.
 
@@ -43,18 +43,21 @@ List the posts
 ---------------
 
 Now, I need to see this post.  I grabbed this from another jekyll site:
+{% literal %}
      <h2>Blog Posts</h2>
      <ul class="posts">
        {% for post in site.posts %}
          <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
        {% endfor %}
      </ul>
+{% endliteral %}
 
 Yak 3: Liquid is not parsing
 ----------------------------
 
 But the liquid entries were not parsed.  Instead, I saw the code inside a list
 item:
+{% literal %}
     <ul>
       <li>
         {% for post in site.posts %}
@@ -62,6 +65,7 @@ item:
         {% endfor %}
       </li>
     </ul>
+{% endliteral %}
 
 Remembering something about a jekyll server, I searched and found this:
     jekyll --server --auto
@@ -79,7 +83,8 @@ Yak 4: github parses it differently
 ------------------------------------
 
 Reviewing the published page, I see the Liquid literal tags... literaly.
-Removed.  Pushed.
+Removed.  Pushed.  Now, the liquid tags are gone from the samples.
+Re-added literal tags, nsuring they were not indented.
 
 Tomorrow?  parsing, layout, use markdown for index.
 
