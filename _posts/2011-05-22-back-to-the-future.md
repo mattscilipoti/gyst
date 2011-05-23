@@ -82,11 +82,17 @@ everything from index.html except for the blog loop.  No dice.
 Yak 4: github parses it differently
 ------------------------------------
 
-Reviewing the published page, I see the Liquid literal tags... literaly.
-Removed.  Pushed.  Now, the liquid tags are gone from the samples.
-Re-added literal tags, nsuring they were not indented.
+Reviewing the published page, I see the Liquid literal tags... literaly.   
+Removed.  Pushed.  Now, all the liquid tags are gone from the samples.   
+Re-added literal tags, ensuring they were not indented.
 
-Tomorrow?  parsing, layout, use markdown for index.
+Is it ready?  Good enough.   
+Update the homepage entry on github.   
+
+
+Tomorrow?
+---------
+parsing, layout, use markdown for index.
 
 'night.
 
