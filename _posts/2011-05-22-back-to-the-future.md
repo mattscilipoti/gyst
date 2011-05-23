@@ -42,7 +42,7 @@ before, but now it's part of my jekyll'd site.
 List the posts
 ---------------
 
-Now, I need to see this post.  I grabbed this from another jekyll site:
+Now, I need to see this post.  I grabbed this from another jekyll site:   
 {% literal %}
      <h2>Blog Posts</h2>
      <ul class="posts">
@@ -56,7 +56,7 @@ Yak 3: Liquid is not parsing
 ----------------------------
 
 But the liquid entries were not parsed.  Instead, I saw the code inside a list
-item:
+item:   
 {% literal %}
     <ul>
       <li>
