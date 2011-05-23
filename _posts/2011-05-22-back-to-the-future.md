@@ -11,7 +11,7 @@ Expect these posts to have "all the warts"... and yaks.
 
 I went with [gh_pages](http://pages.github.com/) and [jekyll](https://github.com/mojombo/jekyll).  It seemed like the easiest way to get a blog associated with a project.  Following the instructions, I ensured my repo was clean, clicked the "auto generate" button and, voilà, ziss blog was born.  As a single, index.html page.
 
-Yak One: the gh_pages branch
+[Yak One](http://sethgodin.typepad.com/seths_blog/2005/03/dont_shave_that.html): the gh_pages branch
 ----------------------------
 
 Github has chosen to create these pages in a special branch: gh_pages.  Thanks to github for making this a little easier.  That button was nice.  I switched to the new branch (`git checkout -t origin/gh_pages`) and `git status` shows me that all the files that were git-ignored in the code branches (master) are not accounted for here.  Copying .gitignore solved that issue.  That means Gemfile.lock is ignored by both and, therefore, shared by both.  I forsee this getting out of synch, creating some minor impediments to adding blog entries. 
@@ -43,21 +43,25 @@ List the posts
 ---------------
 
 Now, I need to see this post.  I grabbed this from another jekyll site:
-{% literal %}
-    <h2>Blog Posts</h2>
-    <ul class="posts">
-      {% for post in site.posts %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-{% endliteral %}
-But the liquid entries were not parsed.  I saw this inside a list
+     <h2>Blog Posts</h2>
+     <ul class="posts">
+       {% for post in site.posts %}
+         <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+       {% endfor %}
+     </ul>
+
+Yak 3: Liquid is not parsing
+----------------------------
+
+But the liquid entries were not parsed.  Instead, I saw the code inside a list
 item:
-{% literal %}
-    {% for post in site.posts %}
-    {{ post.date | date_to_string }} » {{ post.title }}
-    {% endfor %}
-{% endliteral %}
+    <ul>
+      <li>
+        {% for post in site.posts %}
+        {{ post.date | date_to_string }}  &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+        {% endfor %}
+      </li>
+    </ul>
 
 Remembering something about a jekyll server, I searched and found this:
     jekyll --server --auto
@@ -71,6 +75,12 @@ everything from index.html except for the blog loop.  No dice.
 
 <b>Punt</b>.  Manually added a li for this page.
 
+Yak 4: github parses it differently
+------------------------------------
+
+Reviewing the published page, I see the Liquid literal tags... literaly.
+Removed.  Pushed.
+
 Tomorrow?  parsing, layout, use markdown for index.
 
 'night.
@@ -79,6 +89,7 @@ Tomorrow?  parsing, layout, use markdown for index.
 
 ### References
 
+* http://sethgodin.typepad.com/seths_blog/2005/03/dont_shave_that.html
 * http://pages.github.com/
 * https://github.com/mojombo/jekyll
 * https://github.com/mojombo/jekyll/wiki/_pages
