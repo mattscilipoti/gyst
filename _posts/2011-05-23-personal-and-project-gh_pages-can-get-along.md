@@ -1,12 +1,12 @@
 ---
-title: Day 7 - Personal and Project gh_pages can get along (with a Custom
-Domain)
+layout: post
+title: Day 7a - Personal and Project gh_pages can get along
 ---
 
 Back to basics
 --------------
 
-Basic routing anyway.  My "normal" blog is a personal gh_pages at
+Back to basic routing anyway.  My "normal" blog is a personal gh_pages at
 mattscilipoti.github.com.  Following the directions, I had created a
 CNAME file to use a custom domain "blog.clearto.me".  Unfortunately, this
 also caused the project gh_pages to have the custom domain.  To

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Day 7 - Parsing, and not parsing, Liquid
+title: Day 7b - Parsing, and not parsing, Liquid
 ---
 
 Jekyll isn't parsing my Liquid?
