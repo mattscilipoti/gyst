@@ -19,6 +19,11 @@ argument.
     gem install pkg/gyst-0.0.1.gem --no-wrappers
 
 
+Dependencies
+------------
+
+No runtime dependencies (except for the libraries you choose to patch).
+
 
 Scripts
 --------
