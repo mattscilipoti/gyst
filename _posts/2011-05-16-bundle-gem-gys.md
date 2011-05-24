@@ -21,8 +21,9 @@ thought it might be helpful to gather some of the tools we all use into
 one suite.  One toolkit of the scripts, libraries, and patches that we
 use to help speed up our tests.  This is not a collection of tips and
 tricks.  Rather, the *code* you read about in other blogs may be here.
-We'll start with the recommendations from Nick Gauthier's
-[Grease-Your-Suite presentation(s)][gys_showoff].  So... how about "gys".
+We need a name.  Nick Gauthier's
+[Grease-Your-Suite presentation(s)][gys_showoff] were the catalyst for this.  
+How about "gys"?
 
 
 In the past, I've created gems using Jeweler, but the [grumblings][bundler1] on [the web][bundler2] indicate
