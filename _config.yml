@@ -1,3 +1,4 @@
+base_url: http://mattscilipoti.github.com/gyst
 lsi: false
 markdown: rdiscount
 pygments: true
