@@ -1,6 +1,6 @@
 body {
   margin-top: 1.0em;
-  background-color: #b4efd8;
+  background-color: #FFF380;
   font-family: Helvetica, Arial, FreeSans, san-serif;
   color: #000000;
 }
@@ -21,3 +21,10 @@ hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 .footer { text-align:center; padding-top:30px; font-style: italic; }
 
 .error { color: red; }
+.lesson { font-weight: bold; }
+.page-fold { 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  border: 0;
+  width: 150px;
