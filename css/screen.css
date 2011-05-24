@@ -22,9 +22,17 @@ hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 
 .error { color: red; }
 .lesson { font-weight: bold; }
-.page-fold { 
-  position: absolute; 
-  top: 0; 
-  right: 0; 
+.page-fold-left {
+  position: absolute;
+  top: 0;
+  left: 0;
   border: 0;
   width: 150px;
+}
+.page-fold-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  width: 150px;
+}
