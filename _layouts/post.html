@@ -15,7 +15,7 @@ layout: default
     {% for post in site.related_posts limit:3 %}
       <li>
         <span>{{ post.date | date_to_string }}</span> &raquo; 
-        <a href="gyst{{ post.url }}">{{ post.title }}</a>
+        <a href="/gyst{{ post.url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
