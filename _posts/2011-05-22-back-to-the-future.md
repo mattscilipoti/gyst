@@ -1,5 +1,6 @@
 ---
-title: Back to the Future aka. "Gyst Blog. Day One is Day Six."
+layout: post
+title: Day 6 - Back to the Future aka. "Gyst Blog. Day One is Day Six."
 ---
 
 Wherein a blog is created, starting 6 days ago
@@ -47,7 +48,10 @@ Now, I need to see this post.  I grabbed this from another jekyll site:
      <h2>Blog Posts</h2>
      <ul class="posts">
        {% for post in site.posts %}
-         <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+         <li>
+           <span>{{ post.date | date_to_string }}</span> &raquo; 
+           <a href="{{ post.url }}">{{ post.title }}</a>
+         </li>
        {% endfor %}
      </ul>
 {% endliteral %}
@@ -61,7 +65,8 @@ item:
     <ul>
       <li>
         {% for post in site.posts %}
-        {{ post.date | date_to_string }}  &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+          {{ post.date | date_to_string }}  &raquo; 
+          <a href="{{ post.url }}">{{ post.title }}</a>
         {% endfor %}
       </li>
     </ul>
