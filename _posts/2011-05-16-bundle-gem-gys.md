@@ -39,10 +39,7 @@ Tomorrow is the first day of RailsConf 2011.  Getting some sleep.
 
 'night
 
----
-**Disclaimer:** I didn't actually start the blog until about a week into the
-project.  Any blog entries prior to 05/23/2011 were created after the
-fact.  I tried to have them reflect what happened at the time.
+{% include backdate_disclaimer.md %}
 
 [gys_showoff]: http://grease-your-suite.heroku.com/
 [gyst]: http://www.github.com/mattscilipoti/gyst

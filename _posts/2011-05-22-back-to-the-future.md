@@ -111,3 +111,6 @@ parsing, layout, use markdown for index.
 * https://github.com/mojombo/jekyll/wiki/_pages
 * http://i5m.co.uk/code/2011/05/03/Some-Thoughts-On-Jekyll.html
 * https://github.com/mojombo/jekyll/pull/318
+
+{% include backdate_disclaimer.md %}
+

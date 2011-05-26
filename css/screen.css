@@ -20,6 +20,7 @@ pre { background: #202020; color: #fff; padding: 15px;}
 hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 .footer { text-align:center; padding-top:30px; font-style: italic; }
 
+.disclaimer { color: #663300; }
 .error { color: red; }
 .lesson { font-weight: bold; }
 .page-fold-left {
