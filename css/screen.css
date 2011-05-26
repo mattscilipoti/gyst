@@ -21,7 +21,7 @@ hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 .footer { text-align:center; padding-top:30px; font-style: italic; }
 
 .disclaimer { color: #663300; }
-.error { color: red; }
+.error, .fail { color: red; }
 .lesson { font-weight: bold; }
 .page-fold-left {
   position: absolute;
@@ -37,3 +37,4 @@ hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
   border: 0;
   width: 150px;
 }
+.pass { color: green; }
