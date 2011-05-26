@@ -2,5 +2,7 @@ base-url: /gyst
 lsi: false
 markdown: rdiscount
 pygments: true
+rdiscount:
+  extensions: [smart]
 safe: true
 
