@@ -36,7 +36,7 @@ I reviewed [install](https://github.com/mojombo/jekyll/wiki/Install) and [usage]
     markdown: rdiscount
     pygments: true
     safe: true
-The "markdown:" entry is from the [install page](https://github.com/mojombo/jekyll/wiki/Install).   
+I read about the "markdown:" entry on the [install page](https://github.com/mojombo/jekyll/wiki/Install).   
 Runnning `jekyll && open _site/index.html` showed... the same page as
 before, but now it's part of my jekyll'd site.
 
