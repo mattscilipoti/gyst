@@ -23,28 +23,22 @@ Inspired by Nick Gauthier's ["Grease-Your-Suite" presentation(s)][gys_showoff].
 
 Faster tests? Good.
 
-
-Dependencies
-------------
+---
 
 No runtime dependencies (except for the libraries you choose to patch).
 
-See our GitHub page for more info
----------
-To learn more about gyst, including installation, download, and
-contribution information.  
-Head on over to the [github page][gyst]
+---
 
-Authors
--------
+Head on over to the [github page][gyst] to learn more about gyst, including installation, download, and contribution instructions.
 
-Matt Scilipoti (matt@scilipoti.name)
-
+---
 
 Blog Posts
 ----------
+These posts contain a play-by-play account of the creation of the
+toolkit.
 <ul class="posts">
-{% for post in site.posts %}
+{% for post in site.posts reversed %}
    <li>
      <span>{{ post.date | date_to_string }}</span> &raquo; 
      <a href="{{site.base-url}}{{ post.url }}">{{ post.title }}</a>
@@ -52,6 +46,12 @@ Blog Posts
 {% endfor %}
 </ul>
 
+Authors
+-------
+
+Matt Scilipoti (matt@scilipoti.name)
+
+<!-- Links -->
 [gyst]: http://github.com/mattscilipoti/gyst
 [gys_showoff]: http://grease-your-suite.heroku.com/
 
