@@ -73,7 +73,10 @@ Usage:
 
 ### Libraries
 ---
+We are using "selective requires" for the libraries and scripts.  Want everything, simply:
     require 'gyst' # (TODO) enables all the libraries and applies all the patches
+
+You can also just `require` the pieces you want.
 
 #### DbNull
 Yells if you try to access the db
