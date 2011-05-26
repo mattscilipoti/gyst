@@ -26,6 +26,10 @@ ul.posts { list-style-type: none }
 .error, .fail { color: red; }
 .footer { text-align:center; padding-top:30px; font-style: italic; }
 .lesson { font-weight: bold; }
+.page_date { 
+  color: #663300;
+  float: right;
+}
 .page-fold-left {
   position: absolute;
   top: 0;

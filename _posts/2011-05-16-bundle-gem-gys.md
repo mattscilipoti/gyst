@@ -4,9 +4,7 @@ title: Day 1 - bundle gem gys
 ---
 
 
-
-<br/>
-Inspiration
+The Inspiration
 -----------
 
 <h3 class="r g0"><em>in·spi·ra·tion</em><span style="font:smaller 'Doulos SIL','Gentum','TITUS Cyberbit Basic','Junicode','Aborigonal Serif','Arial Unicode MS','Lucida Sans Unicode','Chrysanthi Unicode';margin:0 0 0 .7em">/ˌinspəˈrāSHən/</span><span class="word_type" style="font-size:smaller;margin:0 .7em">Noun</span></h3>
