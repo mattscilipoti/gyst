@@ -51,7 +51,20 @@ toolkit.
 Authors
 -------
 
-Matt Scilipoti (matt@scilipoti.name)
+<script type='text/javascript'>
+<!--
+	var tg='<';
+	var name='matt+gyst';
+	var at='&#x040;';
+	var host1='scilipot';
+	var host2='i.name';
+	var text='Matt Scilipoti';
+	document.write(tg+'a hr'+'ef=mai'+'lto:'+name);
+	document.write(at+host1+host2+'>'+text+tg+'/a>');
+-->
+</script>
+
+We welcome comments, issues, and contributions through [github][gyst]
 
 <!-- Links -->
 [gyst]: http://github.com/mattscilipoti/gyst

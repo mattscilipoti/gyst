@@ -8,6 +8,7 @@ TODO
 
 * <del>feed (feedburner)</del>
 * <del>commments (discus?)</del>
+* <del>analytics (google)</del>
 * <del>smartypants: https://github.com/blog/706-jekyll-puts-on-smartypants</del>
 
 ---
