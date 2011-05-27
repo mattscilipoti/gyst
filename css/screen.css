@@ -17,8 +17,13 @@ h3 { text-align: center; color: #4b1027; }
 a { color: #4b1027; }
 .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
 .download { float: right; }
-pre { background: #202020; color: #fff; padding: 15px;}
 hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+code { 
+  color: #4F4F4F;
+  font-family: Monaco, "Courier New", monospace;
+}
+pre { background: #2F2F2F; color: whiteSmoke; padding: 15px;}
+pre code { color: whiteSmoke; }
 
 ul.posts { list-style-type: none }
 
