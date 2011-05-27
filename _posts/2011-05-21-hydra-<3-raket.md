@@ -96,6 +96,7 @@ Usage:
 The new feature:
 
 {% highlight cucumber %}
+
 # features/command_line/raket.feature
 
 Feature: raket
@@ -118,6 +119,7 @@ bin/raket
     echo "Loading test environment..."
     RAILS_ENV=test rakee $*
 
+Re-install!   
 <span class='pass'>pass</span>.
 
 ----
@@ -141,6 +143,10 @@ end
 task :default => [:features]
 
 {% endhighlight %}
+
+Now, I can use
+    rakee
+<span class='pass'>pass</span>.
 
 ----
 
