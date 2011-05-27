@@ -70,3 +70,91 @@ end
 
 <span class='pass'>pass</span>.  Nice and helpful.  On to the meat.
 
+---
+
+Wait
+----
+
+It passes when run individually, but fails with `rakee` or `rake`?
+<p class="error">Could not find rake-0.9.0 in any of the sources (Bundler::GemNotFound)</p>
+
+Looks like an issue with my "clean gemset".  I was already a little
+uncomfortable that I was not cleaning that up.  Enter new steps:
+
+{% highlight cucumber %}
+
+Given I'm using a new gemset with these gems:
+  | rake |
+
+{% endhighlight %}
+
+And the steps:
+
+{% highlight ruby %}
+
+# features/step_definitions/rvm_steps.rb
+
+Given /^(?:I'm|I am) using a new gemset$/ do
+  use_clean_gemset(CLEAN_GEMSET)
+end
+
+Given /^(?:I'm|I am) using a new gemset with these gems:$/ do |table|
+  # table is a Cucumber::Ast::Table
+  Given "I am using a new gemset"
+
+  table.rows.each do |row|
+    gem = row.first
+    run_simple("gem install #{gem}", true)
+  end
+end
+
+{% endhighlight %}
+
+And the cleanup:
+
+{% highlight ruby %}
+
+# features/support/env.rb
+
+CLEAN_GEMSET = 'delete_me'
+
+Before('@gemset') do
+  puts "INFO: feature may be slow, please be patient.  Using --no-rdoc
+helps."
+  run_simple("rvm --force gemset delete #{CLEAN_GEMSET}", true)
+  @aruba_timeout_seconds = 20
+ end
+
+{% endhighlight %}
+
+Note the increased @aruba_timeout_seconds.  The gem install, with rdoc,
+takes a while.  One workaround is to add `--no-rdoc` to your ~/.gemrc.
+
+One begets another
+-------------------
+
+Rake?  check.  <span class='error'>Bundler not found.</span>  Then, <span class='error'>ffi not found.</span>
+
+{% highlight cucumber %}
+
+  @gemset @announce
+  Scenario: friendly loading (no such gem)
+
+    Given I'm using a new gemset with these gems:
+      | rake    |
+      | bundler |
+      | ffi     |
+
+{% endhighlight %}
+
+Yikes.  Time to stop and re-evaluate.
+
+This fails too.  Is it a clue?
+    bundle exec cucumber -f pretty features/patches/factory_girl.feature
+
+Probably, but it's late.
+
+'night
+
+ps.  That `@announce` tag is pretty helpful.  Thx aruba.
+
