@@ -25,7 +25,7 @@ Scripts
 Various helper scripts.
 
     rakee # runs rake tasks with REE configured for tests
-    raket # hydra helper, runs rake tasks with RAILS_ENV=tes and REE configured for tests
+    raket # hydra helper, runs rake tasks with RAILS_ENV=test and REE configured for tests
     grease_your_suite.sh # configures REE (different for linux/osx?
 
 
@@ -89,7 +89,9 @@ Yells if you try to access the db
     require 'gyst' # (TODO) enables all the libraries and applies all the patches
 
 #### Factory Girl
-Sets default_strategy to :build
+Sets default_strategy to :build. Creating models in the db is slow.
+Don't do it if you don't have to.
+
 
     require 'gyst/factory_girl' # all factory_girl enhancements (rspec, test_unit, etc)
     require 'gyst/factory_girl/rspec' # (TODO) just patch for rspec
