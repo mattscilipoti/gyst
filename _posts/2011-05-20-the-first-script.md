@@ -12,36 +12,44 @@ get use it.
 Step 1: Clarify usage in README.   
 Step 2: Write the feature.   
 
-    Feature: the grease_your_suite script sets configuration options for REE
+{% highlight cucumber %}
+Feature: the grease_your_suite script sets configuration options for REE
 
-      In order to speed up tests, the gys script should
-      assign the environment values
-      to configure GC appropriately for testing
+  In order to speed up tests, the gys script should
+  assign the environment values
+  to configure GC appropriately for testing
 
 
-      Scenario: the script sets Environment Variables
-        When I run `grease_your_suite.sh`
+  Scenario: the script sets Environment Variables
+    When I run `grease_your_suite.sh`
+{% endhighlight %}
 
 How do I know it works?   
 I want to check the values of the various Environment Variables.
 I tried different variations of:
-        Then these Environment Variables should be set:
-          | RUBY_HEAP_MIN_SLOTS           | 1000000 |
-          | RUBY_HEAP_SLOTS_INCREMENT     | 1000000 |
-          | RUBY_HEAP_SLOTS_GROWTH_FACTOR | 1       |
-          ...
+
+{% highlight cucumber %}
+Then these Environment Variables should be set:
+  | RUBY_HEAP_MIN_SLOTS           | 1000000 |
+  | RUBY_HEAP_SLOTS_INCREMENT     | 1000000 |
+  | RUBY_HEAP_SLOTS_GROWTH_FACTOR | 1       |
+  ...
+{% endhighlight %}
+
 But, the Environment vars are set in the bash script and they aren't
 available any more.  I had to be happy with simply checking the output.
 
-      Scenario: the script sets Environment Variables
-        When I run `grease_your_suite.sh`
-        # output includes message and output from `time`
-        Then it should pass with:
-        """
-        INFO: Configuring REE (re: grease_your_suite)
+{% highlight cucumber %}
+Scenario: the script sets Environment Variables
+  When I run `grease_your_suite.sh`
+  # output includes message and output from `time`
+  Then it should pass with:
+  """
+  INFO: Configuring REE (re: grease_your_suite)
 
-        real    0m0
-        """
+  real    0m0
+  """
+{% endhighlight %}
 
 Note that I truncated the expected output from `time`.  Sometimes it ran
 in "0m000", sometimes it took "0m001".  That level of specificity didn't
@@ -55,18 +63,20 @@ I added the aruba dependency, updated
 the cucumber env.rb with info from the [aruba readme][aruba], and copied
 the grease-your-suite.sh script, that I was already using, into /bin.  
 
-    #!/bin/sh
-    
-    # Note: to generate this without the ruby gems wrapper, 
-    #  we used the --no-wrapper arg
-    echo "INFO: Configuring REE (re: grease_your_suite)"
-    export RUBY_HEAP_MIN_SLOTS=1000000
-    export RUBY_HEAP_SLOTS_INCREMENT=1000000
-    export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
-    export RUBY_GC_MALLOC_LIMIT=1000000000
-    export RUBY_HEAP_FREE_MIN=500000111
-    
-    time $@
+{% highlight sh %}
+#!/bin/sh
+
+# Note: to generate this without the ruby gems wrapper, 
+#  we used the --no-wrapper arg
+echo "INFO: Configuring REE (re: grease_your_suite)"
+export RUBY_HEAP_MIN_SLOTS=1000000
+export RUBY_HEAP_SLOTS_INCREMENT=1000000
+export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+export RUBY_GC_MALLOC_LIMIT=1000000000
+export RUBY_HEAP_FREE_MIN=500000111
+
+time $@
+{% endhighlight %}
 
 <span class='fail'>Big 'ole fail</span>
 

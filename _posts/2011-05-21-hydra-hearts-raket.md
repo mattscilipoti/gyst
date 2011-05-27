@@ -114,10 +114,12 @@ Feature: raket
 
 bin/raket
 
-    #!/bin/sh
-    ## Hydra needs test env.
-    echo "Loading test environment..."
-    RAILS_ENV=test rakee $*
+{% highlight sh %}
+#!/bin/sh
+## Hydra needs test env.
+echo "Loading test environment..."
+RAILS_ENV=test rakee $*
+{% endhighlight %}
 
 Re-install!   
 <span class='pass'>pass</span>.
