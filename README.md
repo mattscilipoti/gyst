@@ -6,10 +6,11 @@ the Grease-Your-Suite toolkit.
 TODO
 ----
 
-* feed (feedburner)
-* commments (discus?)
+* <del>feed (feedburner)</del>
+* <del>commments (discus?)</del>
 * <del>smartypants: https://github.com/blog/706-jekyll-puts-on-smartypants</del>
 
+---
 
 References
 ----------
@@ -17,3 +18,4 @@ References
 * http://paulstamatiou.com/how-to-wordpress-to-jekyll
 * https://github.com/mojombo/jekyll/issues/332
 * https://github.com/blog/706-jekyll-puts-on-smartypants
+* http://pygments.org/docs/lexers/

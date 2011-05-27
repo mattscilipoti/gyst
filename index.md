@@ -46,6 +46,8 @@ toolkit.
 {% endfor %}
 </ul>
 
+---
+
 Authors
 -------
 
