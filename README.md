@@ -6,7 +6,9 @@ the Grease-Your-Suite toolkit.
 TODO
 ----
 
-* smartypants: https://github.com/blog/706-jekyll-puts-on-smartypants
+* feed (feedburner)
+* commments (discus?)
+* <del>smartypants: https://github.com/blog/706-jekyll-puts-on-smartypants</del>
 
 
 References
