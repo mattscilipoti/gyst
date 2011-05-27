@@ -30,6 +30,7 @@ ul.posts { list-style-type: none }
 .disclaimer { color: #663300; }
 .error, .fail { color: red; }
 .footer { text-align:center; padding-top:30px; font-style: italic; }
+.footer .feed img { width: 25px; }
 .lesson { font-weight: bold; }
 .page_date { 
   color: #663300;
