@@ -8,7 +8,7 @@ end
 CLEAN_GEMSET = 'delete_me'
 
 Before('@gemset') do
-  puts "INFO: feature may be slow, please be patient."
+  puts "INFO: feature may be slow, please be patient.  Using --no-rdoc in ~/.gemrc helps."
   run_simple("rvm --force gemset delete #{CLEAN_GEMSET}", true)
   @aruba_timeout_seconds = 20
 end
