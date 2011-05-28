@@ -12,10 +12,11 @@ Faster tests? Good.
 
 Install
 --------
-This will be released to rubygems.org once we have a little more
-functionality.   
-**NOTE:** in order to use the bash scripts, you must use the `--no-wrapper`
-argument.
+**NOTE:** in order to use the bash scripts, you must use the `--no-wrappers` argument.   
+
+From rubygems:
+    gem install gyst --no-wrappers
+Locally:
     gem install pkg/gyst-0.0.1.gem --no-wrappers
 
 
