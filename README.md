@@ -123,6 +123,8 @@ Feel free to add sugggestions and bugs to our [issues on github](https://github.
 
 * Fork the project.
 * `bundle install`.  Run all tests with `rakee`
+* **Testing Note:** `rakee` skips @gemset features, due to (bundler?) errors.
+  `cucumber` runs ALL features.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a
   future version unintentionally.  Note: the existing tests may fail
