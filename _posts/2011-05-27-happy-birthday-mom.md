@@ -26,7 +26,7 @@ Locally:
 p.s.
 ---
 
-It's been fun.  And yes, it really is my Mom's birtday.   
+It's been fun.  And yes, it really is my Mom's birthday.   
 In a way, this really is a great present.
 
 Thanks for everything Mom.
