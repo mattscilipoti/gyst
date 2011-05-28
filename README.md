@@ -17,7 +17,7 @@ Install
 From rubygems:
     gem install gyst --no-wrappers
 Locally:
-    gem install pkg/gyst-0.0.1.gem --no-wrappers
+    gem install pkg/gyst-0.?.?.gem --no-wrappers
 
 
 Dependencies
