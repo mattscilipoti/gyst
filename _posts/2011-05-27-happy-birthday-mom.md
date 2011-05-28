@@ -9,6 +9,11 @@ The Public Domain
 The die is cast.  I released gyst to [rubygems (v
 0.0.2)](https://rubygems.org/gems/gyst) and
 emailed my friends and family.   
+
+Frankly, when I reviewed everything, my first thought was "is that all?" :)   
+Then, I realized that it was only evening hours, I had learned a lot about aruba, jekyll, and the stuff blogs are made of, and 
+I had recorded it all.  More respect for Strom.
+
 Onward to DbNull.
 
 ---
