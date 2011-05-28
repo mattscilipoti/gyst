@@ -154,6 +154,27 @@ This fails too.  Is it a clue?
 
 Probably, but it's late.
 
+spec to the rescue
+------------------
+
+I _do_ know how to spec this.
+
+{% highlight ruby %}
+# test/factory_girl_spec.rb
+
+require 'minitest/autorun'
+# require 'minitest/pride' # undefined method `output' for MiniTest::Unit:Class (NoMethodError)
+require File.expand_path('../lib/gyst/factory_girl', File.dirname(__FILE__))
+
+describe Factory do
+  it "should use :build by default" do
+    subject = Factory.new(:test)
+    subject.default_strategy.must_equal :build
+  end
+end
+{% endhighlight %}
+
+<br/>
 'night
 
 ps.  That `@announce` tag is pretty helpful.  Thx aruba.
