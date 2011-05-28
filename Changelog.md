@@ -1,4 +1,4 @@
-## 0.0.1 (May ??, 2011)
+## 0.0.2 (May 27, 2011) - Happy Birthday Mom.
 
 Features:
 

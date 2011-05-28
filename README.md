@@ -78,6 +78,14 @@ Usage:
 
 ### Libraries
 ---
+<strong>As of 2011-05, "`require 'gyst'`" is a noop.</strong>   
+You must require the pieces the you want.  We'll turn this on once more pieces are available, otherwise we will probably break things with each release.   
+Patch factory_girl to use :build, break stuff.   
+Add 'db_null', break stuff.   
+Simply by using "require 'gyst'"?  Let's wait.
+
+---
+
 We are using "selective requires" for the libraries and scripts.  Want everything, simply:
     require 'gyst' # (TODO) enables all the libraries and applies all the patches
 
@@ -91,7 +99,6 @@ Yells if you try to access the db
 
 ### Patches
 ---
-    require 'gyst' # (TODO) enables all the libraries and applies all the patches
 
 #### Factory Girl
 Sets default_strategy to :build. Creating models in the db is slow.
