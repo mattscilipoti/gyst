@@ -1,0 +1,25 @@
+#toc {
+  width: 150px;
+  position: fixed;
+  float: right;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background: transparent url(toc_bkg_right.png) left;
+  height: 100%;
+  white-space: nowrap;
+}
+#toc a {
+  display: block;
+  position: absolute;
+  width: 156px;
+  text-align: left;
+  background: transparent url(chapter_bullet.png) no-repeat left;
+  color: ##4B1027;
+  padding-left: 10px;
+  white-space: nowrap;
+}
+#toc a[title=H1] { font-size:18px;}
+#toc a[title=H2] { font-size:14px;}
+#toc a[title=H3] { font-size:10px;}
+

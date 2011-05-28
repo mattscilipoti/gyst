@@ -6,7 +6,7 @@ body {
 }
 #container {
   margin: 0 auto;
-  width: 700px;
+  width: 730px;
 }
 
 h1 { font-size: 3em; color: #4b1027; margin-bottom: 3px; }
@@ -41,7 +41,7 @@ ul.posts { list-style-type: none }
   top: 0;
   left: 0;
   border: 0;
-  width: 150px;
+  width: 140px;
 }
 .page-fold-right {
   position: absolute;

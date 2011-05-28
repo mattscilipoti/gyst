@@ -10,8 +10,10 @@ title: Grease-Your-Suite Toolkit (gyst)
     <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
 </div>
 
-# [Grease-Your-Suite Toolkit (gyst)][gyst] <span class="small">by <a href="http://github.com/mattscilipoti">mattscilipoti</a></span>
-
+<div>
+  <h1>Grease-Your-Suite Toolkit (gyst)</h1>
+  <span>by <a href="http://github.com/mattscilipoti">mattscilipoti</a></span>
+</div>
 
 <div class="description">
   A suite of helpers to aid in speeding up your tests.
