@@ -6,7 +6,7 @@ layout: default
   {% if page.previous.url %}
   <li>
     <a href="{{site.base-url}}{{page.previous.url}}"
-       title="Previous Post: {{page.previous.title}}">
+       title="prev.: {{page.previous.title}}">
       &laquo; {{page.previous.date | date: "%Y-%m-%d"}}
     </a>&nbsp;
   </li>
@@ -17,7 +17,7 @@ layout: default
   <li>
     &nbsp;
     <a href="{{site.base-url}}{{page.next.url}}"
-       title="next Post: {{page.next.title}}">
+       title="next: {{page.next.title}}">
        &nbsp;{{page.next.date | date: " %Y-%m-%d"}} &raquo;
      </a>
   </li>
