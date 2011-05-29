@@ -10,6 +10,7 @@ body {
 }
 #page-navigation {
   float: right;
+  text-align: center;
 }
 h1 { font-size: 3em; color: #4b1027; margin-bottom: 3px; }
 h1 .small { font-size: 0.4em; }
