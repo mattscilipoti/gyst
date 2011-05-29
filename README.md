@@ -10,7 +10,7 @@ TODO
 * <del>commments (discus?)</del>
 * <del>analytics (google)</del>
 * <del>smartypants: https://github.com/blog/706-jekyll-puts-on-smartypants</del>
-
+* haml & sass on gh_pages?  http://blog.martiandesigns.com/2010/07/19/haml-sass-converters-for-jekyll.html
 ---
 
 References

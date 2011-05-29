@@ -57,7 +57,4 @@ Matt Scilipoti (matt+gyst@scilipoti.name)
 
 We welcome comments, issues, and contributions through [github][gyst]
 
-<!-- Links -->
-[gyst]: http://github.com/mattscilipoti/gyst
-[gys_showoff]: http://grease-your-suite.heroku.com/
-
+{% include common_links.md %}
