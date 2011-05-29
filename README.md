@@ -80,9 +80,9 @@ Usage:
 ### Libraries
 ---
 <strong>As of 2011-05, "`require 'gyst'`" is a noop.</strong>   
-You must require the pieces the you want.  We'll turn this on once more pieces are available, otherwise we will probably break things with each release.   
-Patch factory_girl to use :build, break stuff.   
-Add 'db_null', break stuff.   
+You must require the specific pieces that you want.  We'll turn this on once more pieces are available, otherwise we will probably break your tests with each release.   
+Patch factory_girl to use :build, break some tests.   
+Add 'db_null', break some tests.   
 Simply by using "require 'gyst'"?  Let's wait.
 
 ---
