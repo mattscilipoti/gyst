@@ -24,13 +24,13 @@ I am Committing to Commit More Frequently
 ------------------------------------------
 
 I also noticed that there were times when I would have many steps
-indicated in my walkthrough and only one commit.  This can obfuscate the
+indicated in my walk through and only one commit.  This can obfuscate the
 actual code changes.  More commits?  Better.
 
 gh_pages Gets Its Own Dir
 --------------------------
 
-As you know, this blog is served by Github Pages.  This utilizes a special gh_pages branch.  Since git utilizes a single dir, expecting you to change branches within that dir -- that's what I have been doing.  That makes it difficult to write a blog entry in gh_pages while changning code in master.  Today, I created a new dir gyst_blog and it uses gh_pages branch, while the initial dir (gyst) uses master.  It's amazing what a good night of sleep will do for you.
+As you know, this blog is served by Github Pages.  This utilizes a special gh_pages branch.  Since git utilizes a single dir, expecting you to change branches within that dir -- that's what I have been doing.  That makes it difficult to write a blog entry in gh_pages while changing code in master.  Today, I created a new dir gyst_blog and it uses gh_pages branch, while the initial dir (gyst) uses master.  It's amazing what a good night of sleep will do for you.
 
 <br/>
 'night
