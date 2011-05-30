@@ -6,8 +6,8 @@ layout: post
 Completed Backdated Posts for Day 5
 -----------------------------------
 
- * [Day 5a - Hydra <3 raket](2011/05/21/hydra-%3C3-raket.html)
- * [Day 5b - Factory Girl should :build](2011/05/21/factory_girl-should-build.html)
+ * [Day 5a - Hydra <3 raket](/gyst/2011/05/21/hydra-hearts-raket.html)
+ * [Day 5b - Factory Girl should :build](/gyst/2011/05/21/factory_girl-should-build.html)
 
 ---
 
