@@ -4,6 +4,7 @@ source "http://rubygems.org"
 gemspec
 
 group :test do
+  gem 'cucumber_spinner'
   gem 'factory_girl' # not in gemspec since use of factory_girl patch is optional
 end
 

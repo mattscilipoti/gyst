@@ -1,0 +1,25 @@
+<%
+require 'cucumber_spinner'
+#to use cucumber_spinner, set format to CucumberSpinner::ProgressBarFormatter
+std_format = ENV['CUCUMBER_FORMAT'] || CucumberSpinner::ProgressBarFormatter
+std_opts = "--format #{std_format} --strict --require features"
+std_tags = "--tags ~@wip --tags ~@pending --tags ~@javascript"
+
+rerun_file = 'tmp/cucumber_rerun.txt' 
+rerun_opts = "--strict --require=features --format=rerun --out=#{rerun_file} #{std_tags} " 
+files_to_rerun = File.file?(rerun_file) ? IO.read(rerun_file) : ""
+if files_to_rerun.to_s.strip.empty?
+  rerun_opts << " --format=#{std_format} features" 
+else 
+  rerun_opts << " --format=#{ENV['CUCUMBER_FORMAT'] || 'pretty'} #{files_to_rerun}"
+end
+
+%>
+default: <%= std_opts %> <%= std_tags %>
+
+all: <%= std_opts %>
+js: <%= std_opts %> --tags @javascript
+logged: --format RailsLoggerFormatter
+rerun: <%= rerun_opts %>
+wip: --tags @wip:3 --wip
+

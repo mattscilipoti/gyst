@@ -19,6 +19,9 @@ From rubygems:
 Locally:
     gem install pkg/gyst-0.?.?.gem --no-wrappers
 
+Why do you have to add `-no-wrappers`?  Because the scripts are bash
+scripts, not ruby scripts.  
+We are stuck with this workaround until someone finds a better answer for this issue.  This is the only reference I have found: <http://help.rubygems.org/discussions/suggestions/12-per-executable-wrappers>
 
 Dependencies
 ------------
