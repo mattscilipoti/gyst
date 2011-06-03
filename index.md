@@ -35,10 +35,15 @@ Head on over to the [github page][gyst] to learn more about gyst, including inst
 
 ---
 
-Blog Posts
-----------
+The Project Blog
+----------------
+
 These posts contain a play-by-play account of the creation of the
-toolkit.
+toolkit.  Review them for information about testing the command line
+with aruba, starting a project blog with gh_pages and jekyll (with
+feeds, comments, and analytics), delivering bash scripts, and montioring
+it all.
+
 <ul class="posts">
 {% for post in site.posts reversed %}
    <li>

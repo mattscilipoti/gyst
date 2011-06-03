@@ -13,6 +13,7 @@ Step 1: Clarify usage in README.
 Step 2: Write the feature.   
 
 {% highlight cucumber %}
+
 Feature: the grease_your_suite script sets configuration options for REE
 
   In order to speed up tests, the gys script should

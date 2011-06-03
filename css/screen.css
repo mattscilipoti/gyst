@@ -50,4 +50,5 @@ ul { list-style-type: none }
   width: 150px;
 }
 .pass { color: green; }
+.tip  { color: blue; }
 .word_type { color: #663300 }
