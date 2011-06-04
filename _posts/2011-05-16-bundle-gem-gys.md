@@ -35,8 +35,12 @@ Experiment #1?  Only bundler.
 A few gemspec tweaks and `rake install` works.  We're off and running.
 You can follow along with the [code on github][gyst].
 
-Tomorrow is the first day of RailsConf 2011.  Getting some sleep.
+<span class='update'>Update:</span>
+I forgot to mention that we are NOT committing the Gemfile.lock file.
+[per Yehuda](http://yehudakatz.com/2010/12/16/clarifying-the-roles-of-the-gemspec-and-gemfile/)   
 
+Tomorrow is the first day of RailsConf 2011.  Getting some sleep.
+<br/>
 'night
 
 {% include backdate_disclaimer.md %}
