@@ -50,19 +50,18 @@
       <!-- <h2>Site Tags</h2>-->
       <!-- [> <p>cat:{{ site.tags }}</p><]-->
       <!-- <ul id="site_tags">-->
-      <!--   {% for tag_key in site.tags %}-->
-      <!--     <li>{{ tag_key }}</li>-->
-      <!--   {% endfor %}-->
-      <!-- </ul>-->
-{% if page.tags %}
+        <!--   {% for tag_key in site.tags %}-->
+        <!--     <li>{{ tag_key }}</li>-->
+        <!--   {% endfor %}-->
+        <!-- </ul>-->
+      {% if page.tags.size > 0 %}
       <h2>Tags</h2>
-      <!-- <p>cat:{{ page.tags }}</p>-->
       <ul id="page_tags">
         {% for tag in page.tags %}
           <li class='tag'>{{ tag }}</li>
         {% endfor %}
       </ul>
-{% endif %}
+      {% endif %}
 
     </div> <!-- /left sidebar-->
 
