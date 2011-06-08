@@ -54,6 +54,7 @@
       <!--     <li>{{ tag_key }}</li>-->
       <!--   {% endfor %}-->
       <!-- </ul>-->
+{% if page.tags %}
       <h2>Tags</h2>
       <!-- <p>cat:{{ page.tags }}</p>-->
       <ul id="page_tags">
@@ -61,7 +62,7 @@
           <li class='tag'>{{ tag }}</li>
         {% endfor %}
       </ul>
-
+{% endif %}
 
     </div> <!-- /left sidebar-->
 
