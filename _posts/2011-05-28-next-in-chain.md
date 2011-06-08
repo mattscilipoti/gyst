@@ -1,6 +1,11 @@
 ---
 title: Day 12 - Next Post in the Chain
 layout: post
+tags:
+- gh_pages
+- jekyll
+- retrospective
+- project blog
 ---
 
 Next/Previous

@@ -7,6 +7,12 @@ body {
 #container {
   margin: 0 auto;
   width: 730px;
+  float: left;
+}
+#left_sidebar {
+  width: 140;
+  max-width: 140;
+  float: left;
 }
 #page-navigation {
   float: right;
@@ -35,6 +41,11 @@ ul { list-style-type: none }
 .footer { text-align:center; padding-top:30px; font-style: italic; }
 .footer .feed img { width: 25px; }
 .lesson { font-weight: bold; }
+.logo { 
+  max-width: 140px; 
+  top: 0;
+  left: 0;
+}
 .page-fold-left {
   position: absolute;
   top: 0;
@@ -50,6 +61,9 @@ ul { list-style-type: none }
   width: 150px;
 }
 .pass { color: green; }
+.tag  {
+  margin-left: -30px;
+}
 .tip  { color: blue; }
 .update { color: blue; }
 .word_type { color: #663300 }

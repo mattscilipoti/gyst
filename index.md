@@ -39,7 +39,7 @@ The Project Blog
 ----------------
 
 These posts contain a play-by-play account of the creation of the
-toolkit.  Review them for information about testing the command line
+toolkit, using TDD.  Review them for information about testing the command line
 with aruba, starting a project blog with gh_pages and jekyll (with
 feeds, comments, and analytics), delivering bash scripts, and montioring
 it all.
