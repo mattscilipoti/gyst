@@ -10,8 +10,7 @@ Gem::Specification.new do |s|
   s.email       = ["matt@scilipoti.name"]
   s.homepage    = ""
   s.summary     = %q{A suite of helpers to aid in speeding up your tests.}
-  s.description = %q{A suite of helpers to aid in speeding up your tests; including scripts, existing libraries, and patches.
-  }
+  s.description = %q{A suite of helpers to aid in speeding up your tests; including scripts, existing libraries, and patches.}
 
   s.rubyforge_project = "gyst"
 

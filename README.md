@@ -12,6 +12,8 @@ Faster tests? Good.
 
 Install
 --------
+First, [some songs to test by][music] courtesy of [![portal2](http://www.thinkwithportals.com/images/favicon.ico)][music]   
+
 **NOTE:** in order to use the bash scripts, you must use the `--no-wrappers` argument.   
 
 From rubygems:
@@ -19,8 +21,7 @@ From rubygems:
 Locally:
     gem install pkg/gyst-0.?.?.gem --no-wrappers
 
-Why do you have to add `-no-wrappers`?  Because the scripts are bash
-scripts, not ruby scripts.  
+Why do you have to add `-no-wrappers`?  Because the scripts are bash scripts, not ruby scripts.  
 We are stuck with this workaround until someone finds a better answer for this issue.  This is the only reference I have found: <http://help.rubygems.org/discussions/suggestions/12-per-executable-wrappers>
 
 Dependencies
@@ -90,7 +91,7 @@ Simply by using "require 'gyst'"?  Let's wait.
 
 ---
 
-We are using "selective requires" for the libraries and scripts.  Want everything, simply:
+We are using "selective requires" for the libraries and scripts.  Want everything? Simply:
     require 'gyst' # (TODO) enables all the libraries and applies all the patches
 
 You can also just `require` the pieces you want.
@@ -162,6 +163,7 @@ TODO
 
 
 [gys_showoff]: http://grease-your-suite.heroku.com/  "Grease Your Suites"
+[music]: http://www.thinkwithportals.com/music.php "Songs To Test By - Portal2"
 
 ____
 Copyright (c) 2011 Matthew Scilipoti, released under the MIT license
