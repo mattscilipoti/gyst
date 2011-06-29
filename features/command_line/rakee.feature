@@ -6,4 +6,4 @@ Feature: rakee
     When I successfully run `rakee pass`
     Then the output should contain "Configuring REE"
     And the output should contain "PASS"
-    And the output should match /real +\d.\d\d/
+    And the output should report timing

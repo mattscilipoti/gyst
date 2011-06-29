@@ -29,6 +29,5 @@ Feature: the grease_your_suite script sets configuration options for REE
       """
       INFO: Configuring REE (re: grease_your_suite)
       """
-    #wraps in `time -p`
-    And the output should match /.*real +\d\.\d\d/
+    And the output should report timing
 
