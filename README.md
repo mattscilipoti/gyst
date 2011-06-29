@@ -14,15 +14,13 @@ Install
 --------
 First, [some songs to test by][music] courtesy of [![portal2](http://www.thinkwithportals.com/images/favicon.ico)][music]   
 
-**NOTE:** in order to use the bash scripts, you must use the `--no-wrappers` argument.   
-
 From rubygems:
-    gem install gyst --no-wrappers
+    gem install gyst
 Locally:
-    gem install pkg/gyst-0.?.?.gem --no-wrappers
+    gem install pkg/gyst-0.?.?.gem  
+OR (from source)
+    rake install
 
-Why do you have to add `-no-wrappers`?  Because the scripts are bash scripts, not ruby scripts.  
-We are stuck with this workaround until someone finds a better answer for this issue.  This is the only reference I have found: <http://help.rubygems.org/discussions/suggestions/12-per-executable-wrappers>
 
 Dependencies
 ------------
@@ -139,9 +137,9 @@ Feel free to add sugggestions and bugs to our [issues on github](https://github.
 
 *NOTE*: when adding a new shell script
 
- * add to git index
+ * add to git index (so gemspec can find it)
  * `rake build`
- * gem install pkg/gyst-0.0.?.gem --no-wrappers
+ * `rake install`
 
 References
 -----------
