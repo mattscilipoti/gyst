@@ -14,12 +14,7 @@ Install
 --------
 First, [some songs to test by][music] courtesy of [![portal2](http://www.thinkwithportals.com/images/favicon.ico)][music]   
 
-From rubygems:
     gem install gyst
-Locally:
-    gem install pkg/gyst-0.?.?.gem  
-OR (from source)
-    rake install
 
 
 Dependencies
