@@ -1,4 +1,4 @@
 #!/bin/sh
 
-grease_your_suite.sh rake $@
+grease_your_suite rake $@
 
