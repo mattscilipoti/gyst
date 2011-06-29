@@ -1,6 +1,9 @@
 Grease Your Suite Toolkit (gyst)
 ================================
 
+**WARNING**:
+We are currently having [an issue](https://github.com/mattscilipoti/gyst/issues/7) with version 0.0.3.  We recommend using 0.0.2.
+
 Purpose
 --------
 A suite of helpers to aid in speeding up your tests; including scripts,
