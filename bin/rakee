@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env ruby
 
-grease_your_suite rake $@
+exec 'grease_your_suite', 'rake', *ARGV
 

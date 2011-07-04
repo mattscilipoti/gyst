@@ -1,5 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env ruby
 ## Hydra needs test env.
-echo "Loading test environment..."
-RAILS_ENV=test rakee $*
+puts "Loading test environment..."
+exec 'rakee', *ARGV
 

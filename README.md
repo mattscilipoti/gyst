@@ -116,7 +116,7 @@ Ruby 1.9.2 (p180)
 Contribute
 -----------
 Contributions and discussions are welcome.
-Feel free to add sugggestions and bugs to our [issues on github](https://github.com/mattscilipoti/gyst/issues).
+Feel free to add suggestions and bugs to our [issues on github](https://github.com/mattscilipoti/gyst/issues).
 
 * Fork the project.
 * `bundle install`.  Run all tests with `rakee`

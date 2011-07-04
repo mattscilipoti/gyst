@@ -3,7 +3,7 @@ Feature: raket
   We want to configure REE and set RAILS_ENV
 
   Scenario: raket pass
-    When I successfully run `raket pass`
+    When I successfully run `../../bin/raket pass`
     Then the output should contain "Loading test environment..."
     And the output should contain "Configuring REE"
     And the output should contain "PASS"
