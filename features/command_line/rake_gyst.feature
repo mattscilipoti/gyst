@@ -6,7 +6,7 @@ Feature: the rake tasks for gyst
 
   Scenario: gyst:info
     When I run `rake gyst:info`
-    Then the output should match /"RAILS_ENV" => nil/
+    Then the output should match /"RAILS_ENV" => (nil|"test")/
     And  the output should match /"RUBY_GC_MALLOC_LIMIT" => nil/
     And  the output should match /"RUBY_HEAP_FREE_MIN" => nil/
     And  the output should match /"RUBY_HEAP_MIN_SLOTS" => nil/
