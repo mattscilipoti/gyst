@@ -32,6 +32,7 @@ namespace :gyst do
   desc 'Display info related to gyst (env vars, etc)'
   task :info do
     env_vars = %w{
+      RAILS_ENV
       RUBY_GC_MALLOC_LIMIT
       RUBY_HEAP_FREE_MIN
       RUBY_HEAP_MIN_SLOTS

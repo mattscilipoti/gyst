@@ -9,6 +9,7 @@ Feature: the rake tasks for gyst
     Then it should pass with:
       """
       {
+                              "RAILS_ENV" => nil,
                    "RUBY_GC_MALLOC_LIMIT" => nil,
                      "RUBY_HEAP_FREE_MIN" => nil,
                     "RUBY_HEAP_MIN_SLOTS" => nil,

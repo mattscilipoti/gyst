@@ -18,6 +18,7 @@ Feature: the grease_your_suite script sets configuration options for REE
     Then the output should contain:
       """
       {
+                              "RAILS_ENV" => nil,
                    "RUBY_GC_MALLOC_LIMIT" => "1000000000",
                      "RUBY_HEAP_FREE_MIN" => "500000111",
                     "RUBY_HEAP_MIN_SLOTS" => "1000000",
