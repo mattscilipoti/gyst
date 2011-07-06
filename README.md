@@ -1,4 +1,4 @@
-Grease Your Suite Toolkit (gyst)
+Grease Your Suite Toolkit (gyst) [![Build Status](http://travis-ci.org/mattscilipoti/gyst.png)](http://travis-ci.org/mattscilipoti/gyst)
 ================================
 
 Purpose
