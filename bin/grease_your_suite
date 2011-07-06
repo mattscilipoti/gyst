@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
 
-# Note: to generate this without the ruby gems wrapper, 
-#  we used the --no-wrapper arg
 puts "INFO: Configuring REE (re: grease_your_suite)"
 $stdout.flush
 

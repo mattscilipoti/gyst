@@ -7,11 +7,8 @@ Feature: the grease_your_suite script sets configuration options for REE
 
   Scenario: running with no args
     When I successfully run `grease_your_suite`
-    # output includes message and output from `time`
-    Then the output should contain:
-      """
-      INFO: Configuring REE (re: grease_your_suite)
-      """
+    Then the output should contain "INFO: Configuring REE (re: grease_your_suite)"
+    # time only reports output if arg is passed
 
   Scenario: the script sets Environment Variables
     When I run `grease_your_suite rake gyst:info`
