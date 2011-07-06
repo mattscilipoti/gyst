@@ -6,7 +6,7 @@ Feature: the grease_your_suite script sets configuration options for REE
 
 
   Scenario: running with no args
-    When I successfully run `../../bin/grease_your_suite`
+    When I successfully run `grease_your_suite`
     # output includes message and output from `time`
     Then the output should contain:
       """
@@ -14,7 +14,7 @@ Feature: the grease_your_suite script sets configuration options for REE
       """
 
   Scenario: the script sets Environment Variables
-    When I run `../../bin/grease_your_suite rake gyst:info`
+    When I run `grease_your_suite rake gyst:info`
     Then the output should contain:
       """
                    "RUBY_GC_MALLOC_LIMIT" => "1000000000",
