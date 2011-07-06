@@ -17,14 +17,11 @@ Feature: the grease_your_suite script sets configuration options for REE
     When I run `../../bin/grease_your_suite rake gyst:info`
     Then the output should contain:
       """
-      {
-                              "RAILS_ENV" => nil,
                    "RUBY_GC_MALLOC_LIMIT" => "1000000000",
                      "RUBY_HEAP_FREE_MIN" => "500000111",
                     "RUBY_HEAP_MIN_SLOTS" => "1000000",
               "RUBY_HEAP_SLOTS_INCREMENT" => "1000000",
           "RUBY_HEAP_SLOTS_GROWTH_FACTOR" => "1"
-      }
       """
     Then the output should contain:
       """
