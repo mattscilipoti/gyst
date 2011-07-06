@@ -1,9 +1,6 @@
 Grease Your Suite Toolkit (gyst)
 ================================
 
-**WARNING**:
-We are currently having [an issue](https://github.com/mattscilipoti/gyst/issues/7) with version 0.0.3.  We recommend using 0.0.2.
-
 Purpose
 --------
 A suite of helpers to aid in speeding up your tests; including scripts,
@@ -133,11 +130,14 @@ Feel free to add suggestions and bugs to our [issues on github](https://github.c
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-*NOTE*: when adding a new shell script
+*When adding a new shell script*
 
  * add to git index (so gemspec can find it)
  * `rake build`
  * `rake install`
+
+Do NOT use `rakee/raket` to run the features. This will set ENV vars, 
+  borking the ENV var related tests.
 
 References
 -----------

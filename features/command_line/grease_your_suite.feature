@@ -15,17 +15,11 @@ Feature: the grease_your_suite script sets configuration options for REE
 
   Scenario: the script sets Environment Variables
     When I run `grease_your_suite rake gyst:info`
-    Then the output should contain:
-      """
-                   "RUBY_GC_MALLOC_LIMIT" => "1000000000",
-                     "RUBY_HEAP_FREE_MIN" => "500000111",
-                    "RUBY_HEAP_MIN_SLOTS" => "1000000",
-              "RUBY_HEAP_SLOTS_INCREMENT" => "1000000",
-          "RUBY_HEAP_SLOTS_GROWTH_FACTOR" => "1"
-      """
-    Then the output should contain:
-      """
-      INFO: Configuring REE (re: grease_your_suite)
-      """
+    Then the output should contain "INFO: Configuring REE (re: grease_your_suite)"
+    And  the output should match /"RUBY_GC_MALLOC_LIMIT" => "1000000000"/
+    And  the output should match /"RUBY_HEAP_FREE_MIN" => "500000111"/
+    And  the output should match /"RUBY_HEAP_MIN_SLOTS" => "1000000"/
+    And  the output should match /"RUBY_HEAP_SLOTS_INCREMENT" => "1000000"/
+    And  the output should match /"RUBY_HEAP_SLOTS_GROWTH_FACTOR" => "1"/
     And the output should report timing
 
