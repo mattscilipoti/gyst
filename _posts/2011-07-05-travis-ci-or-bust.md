@@ -37,5 +37,9 @@ We Made It
 [![Build Status](https://secure.travis-ci.org/mattscilipoti/gyst.png)](http://travis-ci.org/mattscilipoti/gyst)   
 I add this badge to the readme: <http://travis-ci.org/#!/mattscilipoti/gyst>
 
+
+Released 0.0.4 to rubygems.org
+--------------
+
 <br/>
 'night
