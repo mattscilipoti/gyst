@@ -1,6 +1,9 @@
 ---
 title: Day 44 - Goodbye `gem install --no-wrappers`
 layout: post
+tags:
+- gem
+- bash
 ---
 
 ----
