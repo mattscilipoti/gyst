@@ -7,7 +7,7 @@ tags:
 ---
 
 What do open source projects do for Continuous Integration?  
-Enter http://travis-ci.org/.
+Enter <http://travis-ci.org/>.
 
 Travis is an attempt to create an open-source, distributed build system for the Ruby community that:
 
