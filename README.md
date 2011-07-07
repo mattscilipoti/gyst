@@ -113,8 +113,16 @@ Tested On
 Ruby 1.9.2 (p180)
 
 
-Contribute
------------
+Many Thanks to these Contributors
+----------------------------------
+Nick Gauthier, for his ["Grease-Your-Suite" presentation(s)][gys_showoff]
+
+** Committers ** (`git log --all --format='%aN, ' | sort -u`):   
+Matt Scilipoti
+
+
+How Can I Help?
+----------------
 Contributions and discussions are welcome.
 Feel free to add suggestions and bugs to our [issues on github](https://github.com/mattscilipoti/gyst/issues).
 
@@ -127,7 +135,7 @@ Feel free to add suggestions and bugs to our [issues on github](https://github.c
   future version unintentionally.  Note: the existing tests may fail
   with pre-1.9 versions of ruby; upgrade to get clean runs.
 * Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+  (if you want to have your own version, that is fine but bump version in a commit by itself so I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
 *When adding a new shell script*
@@ -152,13 +160,12 @@ References
 TODO
 -----
  * Add to rdoc.info
- * CI at travis
  * Multi-ruby testing: 
    * http://rails-bestpractices.com/blog/posts/11-test-your-rubygem-under-different-rubies
    * https://github.com/tomas-stefano/infinity_test
 
 
-[gys_showoff]: http://grease-your-suite.heroku.com/  "Grease Your Suites"
+[gys_showoff]: http://grease-your-suite.heroku.com/ "Grease Your Suites"
 [music]: http://www.thinkwithportals.com/music.php "Songs To Test By - Portal2"
 
 ____
