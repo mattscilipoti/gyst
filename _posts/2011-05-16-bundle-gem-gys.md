@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Day 1 - bundle gem gys
+tags:
+- gem
+- bundler
 ---
 
 
