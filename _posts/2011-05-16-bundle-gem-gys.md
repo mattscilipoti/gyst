@@ -6,7 +6,6 @@ tags:
 - bundler
 ---
 
-
 The Inspiration
 -----------
 
